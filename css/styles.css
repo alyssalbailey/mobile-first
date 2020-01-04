@@ -1,22 +1,35 @@
+/* Base Element Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+
 body {
    background-color: #ffffff;
    font-family: 'Open Sans', sans-serif;
    margin: 0px;
+
 }
 
+a {
+    text-decoration: none;
+}
 .portfolio-block {
     background-color: #F8F8F8;
+    text-align
 }
 
 .portfolio-heading {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
+    padding: 5px 0;
 }
 
 h1 {
    text-align: center;
-   margin-top: 0px;
+   margin: 0px;
    padding-top: 10px;
 }
 
@@ -29,8 +42,8 @@ p {
    color: gray;
    padding-top: 10px;
    padding-bottom: 30px;
-   padding-right: 10px;
-   padding-left: 10px;
+   padding-right: 15px;
+   padding-left: 15px;
 }
 
 nav ul {
@@ -43,7 +56,6 @@ nav a {
     display: block;s
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
     color: black;
     background-color: white;
     padding-top: 12px;
@@ -58,7 +70,7 @@ footer {
 }
 
 footer p {
-    padding-bottom: 0px;
+    padding: 5px;
 
 }
 
@@ -70,7 +82,6 @@ footer h2 {
 
 footer a {
     color: gray;
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -82,9 +93,27 @@ footer nav ul {
     text-align: center;
 }
 
-/* Media Queries ----- */
+.footer-name {
+    margin: 0px;
+    padding: 10px;
+    float: left;
+    background-color: #F8F8F8;
+}
 
-@media (max-width: 320px) {
+.footer-top {
+    margin: 0px;
+    padding: 10px;
+    float: right;
+    background-color: #F8F8F8;
+}
+
+.footer-nav {
+    background-color: #F8F8F8;
+    overflow: auto;
+}
+/* Media Queries: Mobile ----- */
+
+@media (min-width: 320px) {
 
     .portfolio-block, .portfolio-content {
         text-align: center;
@@ -103,7 +132,39 @@ footer nav ul {
         margin-right: auto;
         width: 75%
     }
-
-
 }
 
+/* Media Queries: Tablet ----- */
+
+@media (min-width: 768px) {
+
+/* testing for changes
+    .images {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        float: left;
+    }
+*/
+.portfolio-block {
+    background-color: #F8F8F8;
+    text-align
+}
+    nav ul {
+        list-style: none;
+        display: block;
+        margin: auto;
+    }
+    
+    nav a {
+        text-transform: uppercase;
+        color: black;
+        background-color:  #F8F8F8;
+        padding: 12px;
+        font-weight: bold;
+        margin: 5px;
+        float: left;
+    }
+
+}
