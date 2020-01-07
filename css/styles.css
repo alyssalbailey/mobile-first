@@ -35,6 +35,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 20px;
 }
 
 p {
@@ -111,6 +112,13 @@ footer nav ul {
     background-color: #F8F8F8;
     overflow: auto;
 }
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Media Queries: Mobile ----- */
 
 @media (min-width: 320px) {
@@ -138,6 +146,12 @@ footer nav ul {
 
 @media (min-width: 768px) {
 
+    header {
+        content: "";
+        display: table;
+        clear: both; 
+    }
+
     nav ul {
         content: "";
         display: table;
@@ -161,6 +175,8 @@ footer nav ul {
 
     .portfolio-block {
         text-align: left;
+        content: "";
+        display: table;
         clear: both;
     }
 
@@ -170,4 +186,111 @@ footer nav ul {
         padding: 15px;
 
     }
+
+    .column-one {
+        float:left;
+        width: 50%;
+    
+    }
+
+    .column-two {
+        float: right;
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    footer {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .footer-name {
+        font-weight: bold;
+        display: block;
+        border: 1px solid red;
+    }
+
+    .footer-top {
+        display: none;
+
+    }
+
+
+    .footer-tablet {
+        border: 1px red solid;
+        display: block;
+        float: left;
+        margin: 0px;
+        padding: 10px;
+    }
+}
+
+/* Media Queries: Desktop ----- */
+
+@media (min-width: 1024px) {
+
+h1 {
+    text-align: left;
+    float: left;
+    padding: 25px;
+    display: inline-block;
+    border: solid 1px red;
+}
+
+.student-portrait {
+    width: 40%;
+    float: right;
+    padding: 35px;
+
+}
+
+.portfolio-block,
+p                {
+    text-align: left;
+    margin: 20px;
+    width: 90%;
+    border: solid 1px red;
+    display: block;
+}
+
+nav ul {
+    content: "";
+    display: table;
+    clear: both;
+    border: solid 1px red;
+    display: inline-block;
+    font-size: 12px;
+    padding: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    background-color:  #F8F8F8;
+    padding: 12px;
+    font-weight: bold;
+    margin: 5px;
+    font-style: bold;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+.portfolio-content {
+    background-color: white;
+}
+
 }
