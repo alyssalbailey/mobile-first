@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
    height: 100%;
    margin: 0;
    font-family: 'Open Sans', sans-serif;
+   line-height: 1.5;
    color: black;
    background-color: #ffffff;
 }
 
+.debug {
+    border: solid red 1px;
+
+}
 ul {
     list-style: none;
     padding-left: 0;
@@ -74,12 +80,13 @@ nav a {
 
 .contact {
     background-color: #F8F8F8;
-    padding-top: 10px;
-    width: 100%
+    padding-top:10px;
+    width: 100%;
 }
 
 .contact p {
     margin: 0px;
+    padding: 5px;
 }
 
 footer {
@@ -105,6 +112,8 @@ footer nav ul {
 
 .footer-nav {
     overflow: auto;
+    display: inline;
+    float: right;
 }
 
 .clearfix::after {
@@ -117,8 +126,10 @@ footer nav ul {
 
 @media (min-width: 320px) {
 
-    .portfolio-block, .portfolio-content {
+    .portfolio-block,
+    .portfolio-content {
         text-align: center;
+        max-width: 100%;
 
     }
 
@@ -143,6 +154,11 @@ footer nav ul {
         padding-right: 25px;
     }
 
+    .footer-nav {
+        overflow: auto;
+        display: inline;
+        float: right;
+    }    
     .top {
         background-color: #F8F8F8;
         text-transform: uppercase;
@@ -163,12 +179,22 @@ footer nav ul {
 
 @media (min-width: 768px) {
 
-    nav ul {
-        margin-left: 200px;
+    h1 {
+        float: center;
+        padding: 25px 15 0 15;
+        margin: 5px;
     }
     
+    nav ul {
+        float: center;
+        overflow: auto;
+        margin: 0px;
+    }
+
     nav ul li {
-        float: left;
+        float: center;
+        padding: 5px 0;
+        display: inline-block;
     }
 
     nav a {
@@ -180,43 +206,41 @@ footer nav ul {
         margin: 5px;
     }
 
-    .portfolio-block {
+    .portfolio-block p {
         text-align: left;
+        margin: 10px;
     }
 
     .student-portrait {
-        width: 45%;
+        width: 40%;
         float: right;
-        padding: 15px;
+        display: inline-block;
+        padding: 20px;
+        margin-bottom: 20px;
 
     }
 
-    .column-one {
+    .column-one,
+    .column-two {
         float:left;
         width: 50%;
-    
-    }
-
-    .column-two {
-        float: right;
-        width: 50%;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    p {
-        margin-right: 10px;
-        margin-left: 10px;
     }
     
+    .portfolio-example {
+        min-height: 400px;
+        border: 1px red solid;
+    }
+
+    .portfolio-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .top {
         display: none;
     }
 
     .full {
-        border: 1px red solid;
         display: block;
         float: left;
         margin-top: 8px;
@@ -231,40 +255,30 @@ footer nav ul {
 @media (min-width: 1024px) {
 
 h1 {
-    text-align: left;
     float: left;
-    padding: 25px;
+    padding: 35px;
+}
+
+nav ul {
     display: inline-block;
-    border: solid 1px red;
+    font-size: 20px;
+    padding: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+    width: 50%;
+    
 }
 
 .student-portrait {
     width: 40%;
     float: right;
     padding: 35px;
-
 }
 
-.portfolio-block,
-p                {
+.portfolio-block, p {
     text-align: left;
-    margin: 20px;
-    width: 90%;
-    border: solid 1px red;
-    display: block;
-}
-
-nav ul {
-    content: "";
-    display: table;
-    clear: both;
-    border: solid 1px red;
-    display: inline-block;
-    font-size: 12px;
-    padding: 25px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
+    padding: 20px;
 }
 
 nav a {
@@ -277,12 +291,22 @@ nav a {
     font-style: bold;
 }
 
-body {
-    background-color: #F8F8F8;
-}
-
 .portfolio-content {
     background-color: white;
+    border: 25px solid #F8F8F8;
+    
 }
 
+.portfolio-example{
+    width: 30%;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.column-one,
+.column-two {
+    float: left;
+}
 }
