@@ -26,12 +26,6 @@ a {
     font-weight: bold;
 }
 
-/*
-a:hover {
-    color: #36ACD0;
-  }
-*/
-
 .portfolio-block {
     background-color: #F8F8F8;
 }
@@ -80,6 +74,7 @@ nav a {
     padding-bottom: 12px;
     font-weight: bold;
     margin: 5px;
+    font-family: 'Barlow', sans-serif;
 }
 
 hr {
@@ -97,6 +92,10 @@ hr {
 .contact p {
     margin: 0px;
     padding: 15px;
+}
+
+.contact a {
+    color:#675A85;
 }
 
 footer {
@@ -129,6 +128,9 @@ footer nav ul {
 
 .footer-name {
     font-weight: bold;
+    float: left;
+    display: inline;
+    padding: 0px;
 }
 
 .clearfix::after {
@@ -151,7 +153,14 @@ footer nav ul {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90%
+        width: 90%;
+    }
+
+    .skills-image {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .student-portrait {
@@ -159,31 +168,16 @@ footer nav ul {
         margin-left: auto;
         margin-right: auto;
         width: 60%
-    }
+    } 
 
-
-    .footer-name {
-        float:left;
-        padding-left: 0px;
-        padding-right: 25px;
-    }
-
-    .footer-nav {
-        overflow: auto;
-        display: inline;
-        float: right;
-    }    
     .top {
         background-color: #F8F8F8;
         text-transform: uppercase;
         font-weight: bold;
-        float: left;
-        padding-left: 50px;
-        padding-right: 0px;
-        padding-top: 11px;
     }
 
-    .full {
+    .full,
+    .skills {
         display: none;
     }
 }
@@ -299,7 +293,6 @@ nav a {
     padding: 12px;
     font-weight: bold;
     margin: 5px;
-    font-weight: bold;
 }
 
 .portfolio-heading {
