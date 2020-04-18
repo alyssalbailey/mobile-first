@@ -237,11 +237,17 @@ footer nav ul {
         margin: 0px;
     }
     
+    .skills-container {
+        min-height: 400px;
+        width: 50%;
+        display: block;
+    }
+    
     .portfolio-content {
         width: 90%;
         margin: 0 auto;
     }
-    
+
     .top {
         display: none;
     }
@@ -249,7 +255,6 @@ footer nav ul {
     .full {
         display: block;
         float: left;
-        margin-top: 8px;
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -299,6 +304,7 @@ nav a {
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
 .portfolio-content {
     background-color: white;
     border: 35px solid #F8F8F8;
@@ -312,6 +318,15 @@ nav a {
 }
 
 .portfolio-example p {
+    text-align: center;
+}
+
+.skills-container {
+    width: 33.3%;
+    padding: 10px;
+}
+
+.skills-container p {
     text-align: center;
 }
 
