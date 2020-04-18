@@ -26,6 +26,10 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+    color: #9786BF;
+  }
+
 .portfolio-block {
     background-color: #F8F8F8;
 }
@@ -95,7 +99,7 @@ hr {
 }
 
 .contact a {
-    color:#675A85;
+    color:#9786BF;
 }
 
 footer {
@@ -277,7 +281,6 @@ nav ul {
     margin-top: 0px;
     margin-bottom: 0px;
     float: right;
-    width: 50%;
 }
 
 .student-portrait {
